@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bright &amp; Jiffy Cleaning | Calgary's Affordable Choice For Cleaning Services</title>
+<meta name="description" content="Bright & Jiffy Cleaning (B&J Cleaning) provides commercial, office, industrial, janitorial and home cleaning across Calgary and Airdrie since 2015. Get a free cleaning quote.">
+<link rel="icon" href="images/logo.png">
+<style>
+@font-face{font-family:"Bricolage Grotesque";src:url(fonts/bricolage-grotesque-latin-wght-normal.woff2) format("woff2");font-weight:200 800;font-display:swap}
+@font-face{font-family:"Figtree";src:url(fonts/figtree-latin-wght-normal.woff2) format("woff2");font-weight:300 900;font-display:swap}
+:root{
+  --blue:#0890C8; --blue-d:#0678a8; --navy:#185880; --deep:#0c3550; --ink:#0a2433;
+  --sky:#eaf6fc; --mist:#f5fafd; --line:#d5e6ef; --sun:#ffc53d; --muted:#4d6676;
+  --display:"Bricolage Grotesque",system-ui,sans-serif; --body:"Figtree",system-ui,sans-serif;
+  --w:1280px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--body);color:var(--ink);background:#fff;line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+h1,h2,h3{font-family:var(--display);line-height:1.04;letter-spacing:-.02em;font-weight:700}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 28px}
+.ico{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.eyebrow{font:700 13px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--blue);display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.eyebrow::before{content:"";width:28px;height:3px;background:currentColor;border-radius:2px}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:10px;font:700 16px/1 var(--body);padding:17px 26px;border-radius:999px;background:var(--blue);color:#fff;transition:.2s;border:2px solid var(--blue)}
+.btn:hover{background:var(--navy);border-color:var(--navy);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--navy);border-color:var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#fff}
+.btn.sun{background:var(--sun);border-color:var(--sun);color:var(--ink)}
+.btn.sun:hover{background:#fff;border-color:#fff}
+.btn .ico{font-size:18px}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:#fff;padding:10px;z-index:99}
+
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:28px;height:84px}
+.logo img{height:58px;width:auto}
+nav.main{margin-left:auto}
+nav.main>ul{display:flex;align-items:center;gap:4px}
+nav.main li{position:relative}
+nav.main .tl{white-space:nowrap;font:600 15.5px/1 var(--body);padding:12px 14px;border-radius:10px;display:flex;align-items:center;gap:6px;background:none;border:0;cursor:pointer;color:var(--ink)}
+nav.main .tl:hover,nav.main li:focus-within>.tl{color:var(--blue)}
+nav.main .tl .ico{font-size:14px;transition:.2s}
+.sub{position:absolute;top:100%;left:0;min-width:280px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px;box-shadow:0 24px 50px -20px rgba(12,53,80,.35);opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s}
+nav.main li:hover>.sub,nav.main li:focus-within>.sub,nav.main li.open>.sub{opacity:1;visibility:visible;transform:none}
+.sub a{display:block;padding:10px 14px;border-radius:10px;font-weight:500;font-size:15.5px}
+.sub a:hover{background:var(--sky);color:var(--blue-d)}
+.sub.two{display:grid;grid-template-columns:1fr 1fr;min-width:520px}
+.callnow{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--navy);white-space:nowrap}
+.callnow .ico{font-size:20px;color:var(--blue)}
+.burger{display:none;margin-left:auto;width:46px;height:46px;border-radius:12px;border:1.5px solid var(--line);background:#fff;cursor:pointer;align-items:center;justify-content:center}
+.burger .ico{font-size:22px}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(180deg,#f4fbff 0%,#dff1fa 100%);overflow:hidden}
+.hero .sky{position:absolute;inset:0;background:url(images/calgary-skyline.jpg) 50% 40%/cover;opacity:.11;-webkit-mask-image:linear-gradient(90deg,#000 0%,transparent 55%);mask-image:linear-gradient(90deg,#000 0%,transparent 55%)}
+.stage{position:relative;min-height:640px;padding:64px 4vw 0}
+.hero .copy{position:relative;z-index:2;max-width:540px;padding-bottom:150px}
+.hero .since{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);padding:9px 16px 9px 10px;border-radius:999px;font-weight:700;font-size:14px;color:var(--navy);margin-bottom:26px}
+.hero .since i{width:26px;height:26px;border-radius:50%;background:var(--blue);display:grid;place-items:center;color:#fff}
+.hero .since i .ico{font-size:14px}
+.hero h1{font-size:clamp(38px,4.05vw,58px);color:var(--deep);margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--blue);position:relative;white-space:nowrap}
+.hero h1 em svg{position:absolute;left:0;bottom:-10px;width:100%;height:12px;fill:none;stroke:var(--sun);stroke-width:5;stroke-linecap:round}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:470px;margin-bottom:32px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero .cta .tel{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--navy);padding:0 10px}
+.hero .cta .tel .ico{font-size:20px;color:var(--blue)}
+.team{position:absolute;right:0;bottom:-2px;height:clamp(300px,35vw,520px);width:auto;mix-blend-mode:multiply;z-index:1;max-width:none;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14%);mask-image:linear-gradient(90deg,transparent 0,#000 14%)}
+.spark{position:absolute;fill:var(--blue);opacity:.9}
+.floor{position:relative;z-index:3;background:var(--deep);color:#fff}
+.floor ul{display:grid;grid-template-columns:repeat(5,1fr)}
+.floor li{display:flex;align-items:center;gap:12px;padding:22px 20px;font-weight:600;font-size:15px;line-height:1.25;border-left:1px solid rgba(255,255,255,.12)}
+.floor li:first-child{border-left:0}
+.floor li .ico{font-size:24px;color:var(--sun)}
+
+/* intro */
+.intro{padding:110px 0 70px;position:relative}
+.intro .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:end}
+.big15{font:800 clamp(120px,19vw,260px)/.78 var(--display);letter-spacing:-.06em;color:transparent;-webkit-text-stroke:2px var(--blue);position:relative}
+.big15 small{display:block;font:700 14px/1 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--navy);-webkit-text-stroke:0;margin-top:26px}
+.intro h2{font-size:clamp(30px,3.2vw,46px);margin-bottom:22px;color:var(--deep)}
+.intro p{color:var(--muted);margin-bottom:16px;max-width:620px}
+.facts{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.facts span{display:inline-flex;align-items:center;gap:9px;border:1.5px solid var(--line);padding:10px 16px;border-radius:999px;font-weight:600;font-size:15px;color:var(--navy)}
+.facts .ico{color:var(--blue);font-size:17px}
+
+/* directory */
+.directory{padding:40px 0 110px}
+.plaque{background:var(--deep);border-radius:34px;color:#fff;display:grid;grid-template-columns:1.05fr .95fr;overflow:hidden;position:relative;box-shadow:0 40px 80px -40px rgba(12,53,80,.6)}
+.plaque .left{padding:56px 52px 50px}
+.plaque .eyebrow{color:var(--sun)}
+.plaque h2{font-size:clamp(32px,3.5vw,50px);margin-bottom:16px}
+.plaque .left>p{color:#b9d3e2;max-width:520px;margin-bottom:28px}
+.jan{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}
+.jan span{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);padding:9px 14px;border-radius:999px;font-size:14px;font-weight:600}
+.jan .ico{color:var(--sun);font-size:15px}
+.rows{border-top:1px solid rgba(255,255,255,.16)}
+.row{display:grid;grid-template-columns:44px 1fr 34px;align-items:center;gap:14px;padding:19px 6px;border-bottom:1px solid rgba(255,255,255,.16);transition:.25s;position:relative}
+.row .n{font:700 14px var(--display);color:var(--sun);letter-spacing:.08em}
+.row h3{font-size:24px;letter-spacing:-.01em;font-weight:600}
+.row p{font-size:14.5px;color:#9fc0d4;margin-top:3px;line-height:1.45}
+.row .go{width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(255,255,255,.3);display:grid;place-items:center;transition:.25s}
+.row .go .ico{font-size:16px}
+.row:hover,.row:focus-visible,.row.on{padding-left:20px;background:rgba(255,255,255,.06)}
+.row:hover .go,.row.on .go{background:var(--sun);border-color:var(--sun);color:var(--ink);transform:rotate(-45deg)}
+.plaque .right{position:relative;min-height:560px;background:var(--navy)}
+.plaque .right img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .45s}
+.plaque .right img.on{opacity:1}
+.plaque .right::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--deep) 0,transparent 28%)}
+.plaque .tag{position:absolute;z-index:2;right:26px;bottom:26px;background:#fff;color:var(--ink);padding:13px 20px;border-radius:14px;font:700 15px var(--display);display:flex;align-items:center;gap:10px;box-shadow:0 14px 30px -10px rgba(0,0,0,.4)}
+.plaque .tag .ico{color:var(--blue)}
+.plaque .jlink{display:inline-flex;gap:10px;align-items:center;font-weight:700;color:var(--sun);margin-top:26px}
+.plaque .jlink:hover{gap:16px}
+
+/* residential */
+.resi{background:var(--sky);padding:110px 0;position:relative;overflow:hidden}
+.resi .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center}
+.bevel{position:relative}
+.bevel img{width:100%;aspect-ratio:4/5;object-fit:cover;clip-path:polygon(0 0,82% 0,100% 14%,100% 100%,18% 100%,0 86%)}
+.bevel::before{content:"";position:absolute;inset:18px -18px -18px 18px;background:var(--blue);clip-path:polygon(0 0,82% 0,100% 14%,100% 100%,18% 100%,0 86%);z-index:-1}
+.bevel{z-index:0}
+.bevel .stamp{position:absolute;left:-18px;bottom:46px;background:var(--sun);color:var(--ink);padding:14px 20px;font:800 17px var(--display);transform:rotate(-4deg);box-shadow:0 12px 24px -10px rgba(0,0,0,.35)}
+.resi h2{font-size:clamp(32px,3.6vw,52px);color:var(--deep);margin-bottom:18px}
+.resi .txt{color:var(--muted);max-width:600px;margin-bottom:32px}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:34px}
+.chips a{display:flex;align-items:center;gap:14px;background:#fff;border-radius:16px;padding:16px 18px;font-weight:600;border:1.5px solid transparent;transition:.2s}
+.chips a i{width:34px;height:34px;border-radius:10px;background:var(--sky);color:var(--blue);display:grid;place-items:center;flex:none;transition:.2s}
+.chips a:hover{border-color:var(--blue);transform:translateX(4px)}
+.chips a:hover i{background:var(--blue);color:#fff}
+.chips a .ico{font-size:18px}
+
+/* industries */
+.ind{padding:110px 0 90px}
+.head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:46px;flex-wrap:wrap}
+.head h2{font-size:clamp(32px,3.8vw,54px);color:var(--deep);max-width:720px}
+.head p{color:var(--muted);max-width:420px}
+.bento{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:230px;gap:14px}
+.tile{position:relative;overflow:hidden;border-radius:22px;color:#fff;display:flex;align-items:flex-end;background:var(--navy)}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,rgba(8,32,48,.85))}
+.tile:hover img{transform:scale(1.07)}
+.tile span{position:relative;z-index:2;display:flex;width:100%;justify-content:space-between;align-items:center;padding:20px 22px;font:700 20px/1.15 var(--display)}
+.tile span i{width:38px;height:38px;border-radius:50%;background:#fff;color:var(--navy);display:grid;place-items:center;flex:none;transition:.25s}
+.tile:hover span i{background:var(--sun);transform:rotate(-45deg)}
+.t1{grid-column:span 5;grid-row:span 2}.t1 span{font-size:30px}
+.t2{grid-column:span 4}.t3{grid-column:span 3}.t4{grid-column:span 3}.t5{grid-column:span 4}
+.t6,.t7,.t8,.t9{grid-column:span 3}
+.extras{margin-top:26px;border:1.5px dashed var(--blue);border-radius:20px;padding:20px 26px;display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center}
+.extras b{font:700 13px var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
+.extras span{display:inline-flex;gap:9px;align-items:center;font-weight:600;color:var(--navy)}
+.extras .ico{color:var(--blue)}
+.extras a{margin-left:auto;font-weight:700;color:var(--blue-d);display:inline-flex;gap:8px;align-items:center}
+
+/* area */
+.area{position:relative;color:#fff;padding:110px 0;background:var(--deep);overflow:hidden}
+.area .bg{position:absolute;inset:0;background:url(images/calgary-skyline.jpg) center/cover;opacity:.3;mix-blend-mode:luminosity}
+.area .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--deep) 15%,rgba(12,53,80,.2))}
+.area .grid{position:relative;display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center}
+.area h2{font-size:clamp(32px,3.8vw,54px);margin-bottom:20px}
+.area p{color:#b9d3e2;max-width:520px;margin-bottom:30px}
+.area .eyebrow{color:var(--sun)}
+.locs{display:flex;gap:14px;flex-wrap:wrap}
+.route{width:100%;height:auto;overflow:visible}
+.route text{font:700 22px var(--display);fill:#fff}
+.route .small{font:600 14px var(--body);fill:#b9d3e2;letter-spacing:.14em;text-transform:uppercase}
+.route a:hover circle.pin{fill:var(--sun)}
+
+/* why */
+.why{padding:0;display:grid;grid-template-columns:.85fr 1.15fr;min-height:640px}
+.why .pic{position:relative;min-height:380px}
+.why .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.why .pic::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,53,80,.7),transparent 50%)}
+.why .pic b{position:absolute;z-index:2;left:36px;bottom:34px;color:#fff;font:700 clamp(26px,2.6vw,38px)/1.1 var(--display);max-width:360px}
+.why .info{padding:96px max(28px,calc((100vw - var(--w))/2 + 28px)) 90px 80px;background:#fff}
+.why h2{font-size:clamp(32px,3.6vw,50px);color:var(--deep);margin-bottom:46px}
+.six{display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1.5px solid var(--line);border-left:1.5px solid var(--line)}
+.six li{padding:30px 24px 32px;border-right:1.5px solid var(--line);border-bottom:1.5px solid var(--line);transition:.25s}
+.six li:hover{background:var(--sky)}
+.six .ico{font-size:32px;color:var(--blue);margin-bottom:18px;stroke-width:1.7}
+.six h3{font-size:21px;margin-bottom:8px;color:var(--deep)}
+.six p{font-size:15px;color:var(--muted);line-height:1.5}
+
+/* reviews */
+.rev{background:var(--mist);padding:110px 0}
+.rev .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:stretch}
+.feat{display:flex;flex-direction:column;justify-content:center;background:var(--navy);color:#fff;border-radius:30px;padding:56px 50px;position:relative;overflow:hidden}
+.feat svg.q{position:absolute;right:30px;top:20px;width:120px;fill:rgba(255,255,255,.08)}
+.feat blockquote{font:600 clamp(24px,2.5vw,34px)/1.22 var(--display);letter-spacing:-.01em;margin:22px 0 30px;position:relative}
+.who{display:flex;align-items:center;gap:14px}
+.who i{width:50px;height:50px;border-radius:50%;background:var(--sun);color:var(--ink);display:grid;place-items:center;font:800 19px var(--display);font-style:normal}
+.who b{display:block;font-size:17px}.who small{color:#a8cade;font-size:14px}
+.qs li{padding:26px 0;border-bottom:1.5px solid var(--line)}
+.qs li:first-child{padding-top:0}
+.qs blockquote{font-size:19px;line-height:1.45;color:var(--deep);font-weight:500;margin-bottom:14px}
+.qs .who i{width:40px;height:40px;font-size:16px;background:var(--sky);color:var(--blue-d)}
+.qs .who b{font-size:15.5px}.qs .who small{color:var(--muted)}
+.rev h2{font-size:clamp(32px,3.6vw,50px);color:var(--deep);margin-bottom:40px;max-width:640px}
+
+/* cta */
+.cta-band{background:var(--blue);color:#fff;padding:96px 0;position:relative;overflow:hidden}
+.cta-band .wrap{position:relative;display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center}
+.cta-band h2{font-size:clamp(44px,6.4vw,100px);letter-spacing:-.04em;line-height:.95;margin-bottom:22px}
+.cta-band p{font-size:19px;max-width:560px;color:#e4f5fc}
+.cta-band .side{display:grid;gap:14px}
+.cta-band .side a.line{display:flex;align-items:center;gap:14px;font-weight:700;font-size:19px;padding:16px 20px;border-radius:16px;background:rgba(255,255,255,.14)}
+.cta-band .side a.line:hover{background:rgba(255,255,255,.26)}
+.cta-band .side .btn{justify-content:center;font-size:18px;padding:21px}
+.cta-band .sp{position:absolute;fill:#fff;opacity:.22}
+
+/* footer */
+footer{background:var(--ink);color:#b4c9d6;padding:80px 0 0;font-size:15.5px}
+.fgrid{display:grid;grid-template-columns:1.35fr 1fr 1fr 1fr 1fr;gap:40px;padding-bottom:56px}
+footer img.fl{height:76px;width:auto;margin-bottom:22px}
+footer address{font-style:normal;margin-bottom:16px;line-height:1.55}
+footer h4{font:700 13px var(--body);letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:18px}
+footer li{margin-bottom:9px}
+footer a:hover{color:var(--sun)}
+.contact-l a{display:flex;gap:10px;align-items:center;margin-bottom:9px;font-weight:600;color:#fff}
+.contact-l .ico{color:var(--sun);font-size:18px}
+.social{display:flex;gap:10px;margin-top:18px}
+.social a{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.25);display:grid;place-items:center;color:#fff}
+.social a:hover{background:var(--sun);border-color:var(--sun);color:var(--ink)}
+.legal{border-top:1px solid rgba(255,255,255,.12);padding:24px 0;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;font-size:14.5px}
+.legal .l{display:flex;gap:22px;flex-wrap:wrap}
+.legal .credit a{color:#fff;font-weight:700;border-bottom:1.5px solid var(--sun)}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}*{transition:none!important}}
+
+/* responsive */
+@media (max-width:1180px){
+  .callnow span{display:none}
+  nav.main .tl{padding:12px 10px;font-size:15px}
+  .fgrid{grid-template-columns:1fr 1fr 1fr}
+  .fgrid>div:first-child{grid-column:1/-1}
+}
+@media (max-width:1000px){
+  .burger{display:flex}
+  .callnow{display:none}
+  nav.main{display:none;position:absolute;top:84px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:14px 20px 24px;max-height:calc(100vh - 84px);overflow:auto}
+  nav.main.open{display:block}
+  nav.main>ul{flex-direction:column;align-items:stretch;gap:0}
+  nav.main .tl{width:100%;justify-content:space-between;padding:16px 8px;font-size:18px;border-bottom:1px solid var(--line);border-radius:0}
+  .sub,.sub.two{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;padding:0 0 8px 10px;min-width:0;display:none;grid-template-columns:1fr}
+  nav.main li.open>.sub{display:block}
+  nav.main li:hover>.sub{display:none}
+  nav.main li.open:hover>.sub{display:block}
+  nav.main li.open>.tl .ico{transform:rotate(180deg)}
+  .nav-cta{margin-top:18px}
+  .stage{min-height:0;padding-top:44px}
+  .hero .copy{padding-bottom:0;max-width:640px}
+  .team{position:relative;display:block;height:auto;width:min(100%,640px);margin:26px 0 0 auto;right:auto}
+  .floor ul{grid-template-columns:1fr 1fr}
+  .floor li{border-top:1px solid rgba(255,255,255,.12)}
+  .floor li:nth-child(odd){border-left:0}
+  .floor li:last-child{grid-column:1/-1}
+  .intro .grid,.plaque,.resi .grid,.area .grid,.why,.rev .grid,.cta-band .wrap{grid-template-columns:1fr}
+  .intro .grid{gap:30px}
+  .plaque .right{min-height:340px}
+  .plaque .right::after{background:linear-gradient(0deg,var(--deep) 0,transparent 30%)}
+  .resi .grid{gap:60px}
+  .bevel{max-width:420px}
+  .bento{grid-template-columns:repeat(2,1fr);grid-auto-rows:190px}
+  .bento .tile{grid-column:span 1!important;grid-row:span 1!important}
+  .bento .t1{grid-column:span 2!important;grid-row:span 2!important}
+  .bento .t9{grid-column:span 2!important}
+  .why .info{padding:60px 28px}
+  .six{grid-template-columns:1fr 1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .logo img{height:50px}
+  .plaque .left{padding:38px 24px}
+  .row{grid-template-columns:34px 1fr 30px}
+  .row h3{font-size:20px}
+  .chips{grid-template-columns:1fr}
+  .six{grid-template-columns:1fr}
+  .feat{padding:40px 26px}
+  .floor ul{grid-template-columns:1fr}
+  .floor li:last-child{grid-column:auto}
+  .floor li{border-left:0;padding:16px 20px}
+  .fgrid{grid-template-columns:1fr}
+  .extras a{margin-left:0}
+  .intro,.resi,.ind,.area,.rev{padding-top:76px;padding-bottom:76px}
+  .directory{padding-bottom:76px}
+  .big15{-webkit-text-stroke:1.5px var(--blue)}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-tick" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15z"/><path d="M5 19c3-5 6-8 10-10"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M10 21v-3h4v3"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></symbol>
+    <symbol id="i-factory" viewBox="0 0 24 24"><path d="M3 21V10l6 4v-4l6 4V6h3v15z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.5 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 018-2.7A4.5 4.5 0 0120 9c0 6-8 11-8 11z"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M6 21h12M5 7h14M5 7l-3 7a3 3 0 006 0zM19 7l-3 7a3 3 0 006 0z"/></symbol>
+    <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.5 9a2.5 2 0 00-2.5-1.5c-1.5 0-2.5.8-2.5 2s1 1.7 2.5 2 2.5.8 2.5 2-1 2-2.5 2A2.7 2 0 019.5 15M12 6v1.5M12 16.5V18"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 2c.8 5.2 4.8 9.2 10 10-5.2.8-9.2 4.8-10 10-.8-5.2-4.8-9.2-10-10 5.2-.8 9.2-4.8 10-10z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-flex" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4M8 14h3M13 14h3M8 18h3"/></symbol>
+    <symbol id="i-carpet" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="1.5"/><path d="M6 7v10M18 7v10M3 11h18M3 13h18"/></symbol>
+    <symbol id="i-window" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M12 3v18M4 12h16"/></symbol>
+    <symbol id="i-tools" viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 005 5L10 21l-5-5zM5 3l4 4M3 8l5-5"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="https://bandjcleaning.ca/" aria-label="Bright &amp; Jiffy Cleaning home"><img src="images/logo.png" alt="Bright & Jiffy Cleaning" width="124" height="75"></a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mainnav"><svg class="ico"><use href="#i-down"/></svg></button>
+    <nav class="main" id="mainnav" aria-label="Main">
+      <ul>
+        <li class="has"><button class="tl" aria-expanded="false">Business Cleaning <svg class="ico"><use href="#i-down"/></svg></button>
+          <div class="sub">
+            <a href="https://bandjcleaning.ca/janitorial-services/">Janitorial Services</a>
+            <a href="https://bandjcleaning.ca/commercial-cleaning/">Commercial Cleaning</a>
+            <a href="https://bandjcleaning.ca/office-cleaning/">Office Cleaning</a>
+            <a href="https://bandjcleaning.ca/industrial-cleaning/">Industrial Cleaning</a>
+            <a href="https://bandjcleaning.ca/day-porters/">Day Porters</a>
+            <a href="https://bandjcleaning.ca/condo-building-cleaning/">Condo Building Cleaning</a>
+          </div></li>
+        <li class="has"><button class="tl" aria-expanded="false">Home Cleaning <svg class="ico"><use href="#i-down"/></svg></button>
+          <div class="sub two">
+            <a href="https://bandjcleaning.ca/home-cleaning/">Home Cleaning</a>
+            <a href="https://bandjcleaning.ca/apartment-condo-cleaning/">Apartment &amp; Condo</a>
+            <a href="https://bandjcleaning.ca/maids/">Maids &amp; Custom Cleaning</a>
+            <a href="https://bandjcleaning.ca/move-in-move-out-cleaning/">Move-In &amp; Move-Out</a>
+            <a href="https://bandjcleaning.ca/deep-cleaning/">One-Time Deep Cleaning</a>
+            <a href="https://bandjcleaning.ca/post-construction-cleaning/">Post Construction</a>
+            <a href="https://bandjcleaning.ca/spring-cleaning/">Spring &amp; Seasonal</a>
+            <a href="https://bandjcleaning.ca/vacation-rental-cleaning/">Vacation Rental / Airbnb</a>
+          </div></li>
+        <li class="has"><button class="tl" aria-expanded="false">Industries <svg class="ico"><use href="#i-down"/></svg></button>
+          <div class="sub two">
+            <a href="https://bandjcleaning.ca/bar-restaurant-cleaning/">Bar &amp; Restaurant</a>
+            <a href="https://bandjcleaning.ca/dealership-cleaning/">Car Dealership</a>
+            <a href="https://bandjcleaning.ca/dentist-medical-cleaning/">Dentist &amp; Medical</a>
+            <a href="https://bandjcleaning.ca/factory-warehouse-cleaning/">Factory &amp; Warehouse</a>
+            <a href="https://bandjcleaning.ca/fitness-centre-gym-cleaning/">Fitness Centre &amp; Gym</a>
+            <a href="https://bandjcleaning.ca/religious-building-church-cleaning/">Religious Building &amp; Church</a>
+            <a href="https://bandjcleaning.ca/retail-store-cleaning/">Retail Store</a>
+            <a href="https://bandjcleaning.ca/school-daycare-cleaning/">School &amp; Daycare</a>
+            <a href="https://bandjcleaning.ca/spa-salon-cleaning/">Spa &amp; Salon</a>
+          </div></li>
+        <li class="has"><button class="tl" aria-expanded="false">Locations <svg class="ico"><use href="#i-down"/></svg></button>
+          <div class="sub">
+            <a href="https://bandjcleaning.ca/calgary/">Calgary</a>
+            <a href="https://bandjcleaning.ca/airdrie/">Airdrie</a>
+          </div></li>
+        <li><a class="tl" href="https://bandjcleaning.ca/cleaning-company/">Our Company</a></li>
+        <li><a class="tl" href="https://bandjcleaning.ca/contact/">Contact</a></li>
+        <li class="nav-cta"><a class="btn" href="https://bandjcleaning.ca/contact/#quote">Get A Quote</a></li>
+      </ul>
+    </nav>
+    <a class="callnow" href="tel:+14039985259"><svg class="ico"><use href="#i-phone"/></svg><span>(403) 998-5259</span></a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="sky" aria-hidden="true"></div>
+  <div class="stage">
+    <svg class="spark" style="left:46%;top:70px;width:26px" viewBox="0 0 24 24"><use href="#i-sparkle"/></svg>
+    <svg class="spark" style="left:52%;top:130px;width:14px;opacity:.6" viewBox="0 0 24 24"><use href="#i-sparkle"/></svg>
+    <div class="copy">
+      <div class="since"><i><svg class="ico"><use href="#i-pin"/></svg></i>Calgary &amp; Airdrie, since 2015</div>
+      <h1>Calgary's <em>Affordable<svg viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8c40-7 120-7 196-2"/></svg></em> Choice For Cleaning Services</h1>
+      <p class="lead">Helping Calgary with its cleaning needs; our commercial cleaners and reliable maids ensure your property is clean &amp; healthy.</p>
+      <div class="cta">
+        <a class="btn" href="https://bandjcleaning.ca/contact/#quote">Get a Free Cleaning Quote <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a class="tel" href="tel:+14039985259"><svg class="ico"><use href="#i-phone"/></svg>(403) 998-5259</a>
+      </div>
+    </div>
+    <img class="team" src="images/team.jpg" alt="The Bright & Jiffy Cleaning team in uniform with cleaning equipment" width="1425" height="800" fetchpriority="high">
+  </div>
+  <div class="floor">
+    <ul class="wrap" style="padding:0">
+      <li><svg class="ico"><use href="#i-building"/></svg>Office &amp; Commercial Cleaning</li>
+      <li><svg class="ico"><use href="#i-factory"/></svg>Industry Specialized Cleaning</li>
+      <li><svg class="ico"><use href="#i-clock"/></svg>Building Cleaning &amp; Porters</li>
+      <li><svg class="ico"><use href="#i-home"/></svg>Maids &amp; Home Cleaning</li>
+      <li><svg class="ico"><use href="#i-leaf"/></svg>Green Cleaning Solutions</li>
+    </ul>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="wrap grid">
+    <div class="big15 rv" aria-hidden="true">2015<small>Calgary &amp; Airdrie</small></div>
+    <div class="rv">
+      <div class="eyebrow">Welcome to Bright &amp; Jiffy Cleaning</div>
+      <h2>Where the pursuit of pristine spaces is our passion.</h2>
+      <p>Since 2015, we've been dedicated to transforming businesses and homes throughout Calgary and Airdrie. We're your trusted partner in creating a clean, inviting, and healthy environment.</p>
+      <p>We understand the significance of first impressions, and that's why we tailor our services to elevate your property.</p>
+      <div class="facts">
+        <span><svg class="ico"><use href="#i-clock"/></svg>24/7 availability</span>
+        <span><svg class="ico"><use href="#i-shield"/></svg>Bonded &amp; insured</span>
+        <span><svg class="ico"><use href="#i-leaf"/></svg>Eco-friendly products</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS DIRECTORY -->
+<section class="directory" id="business">
+  <div class="wrap rv">
+    <div class="plaque">
+      <div class="left">
+        <div class="eyebrow">Janitorial Solutions</div>
+        <h2>Business cleaning, floor by floor.</h2>
+        <p>An extensive range of janitorial solutions that can be customized to meet the unique needs of your office, building or facility.</p>
+        <div class="jan">
+          <span><svg class="ico"><use href="#i-clock"/></svg>24/7 availability</span>
+          <span><svg class="ico"><use href="#i-shield"/></svg>Bonded &amp; insured</span>
+          <span><svg class="ico"><use href="#i-leaf"/></svg>Eco-friendly products</span>
+          <span><svg class="ico"><use href="#i-flex"/></svg>Flexible scheduling</span>
+        </div>
+        <ul class="rows" id="rows">
+          <li><a class="row on" data-img="commercial" href="https://bandjcleaning.ca/commercial-cleaning/"><span class="n">01</span><div><h3>Commercial Cleaning</h3><p>Thorough sanitizing and organizing for your workspace.</p></div><span class="go"><svg class="ico"><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-img="office" href="https://bandjcleaning.ca/office-cleaning/"><span class="n">02</span><div><h3>Office Cleaning</h3><p>An immaculate, productive workspace.</p></div><span class="go"><svg class="ico"><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-img="industrial" href="https://bandjcleaning.ca/industrial-cleaning/"><span class="n">03</span><div><h3>Industrial Cleaning</h3><p>Keeps your facility running smoothly and efficiently.</p></div><span class="go"><svg class="ico"><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-img="porters" href="https://bandjcleaning.ca/day-porters/"><span class="n">04</span><div><h3>Day Porters</h3><p>An extra touch to keep your building pristine and organized.</p></div><span class="go"><svg class="ico"><use href="#i-arrow"/></svg></span></a></li>
+          <li><a class="row" data-img="condo" href="https://bandjcleaning.ca/condo-building-cleaning/"><span class="n">05</span><div><h3>Condo Buildings</h3><p>Upkeep for lobbies, corridors and common areas.</p></div><span class="go"><svg class="ico"><use href="#i-arrow"/></svg></span></a></li>
+        </ul>
+        <a class="jlink" href="https://bandjcleaning.ca/janitorial-services/">All janitorial services <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="right" aria-hidden="true">
+        <img class="on" data-k="commercial" src="images/commercial.jpg" alt="">
+        <img data-k="office" src="images/office.jpg" alt="">
+        <img data-k="industrial" src="images/industrial.jpg" alt="">
+        <img data-k="porters" src="images/porters.jpg" alt="">
+        <img data-k="condo" src="images/condo.jpg" alt="">
+        <div class="tag"><svg class="ico"><use href="#i-building"/></svg><span id="tagtxt">Commercial Cleaning</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESIDENTIAL -->
+<section class="resi" id="home-cleaning">
+  <div class="wrap grid">
+    <div class="bevel rv">
+      <img src="images/home.jpg" alt="Bright, tidy living space cleaned by B&J maids">
+      <div class="stamp">Maids &amp; Home Cleaning</div>
+    </div>
+    <div class="rv">
+      <div class="eyebrow">Residential Cleaning</div>
+      <h2>Transform the cleanliness standards in your home.</h2>
+      <p class="txt">Comprehensive residential cleaning that sanitizes and organizes your living space, from apartments and houses to move-ins and seasonal refreshes.</p>
+      <div class="chips">
+        <a href="https://bandjcleaning.ca/apartment-condo-cleaning/"><i><svg class="ico"><use href="#i-building"/></svg></i>Apartment &amp; Condo Cleaning</a>
+        <a href="https://bandjcleaning.ca/home-cleaning/"><i><svg class="ico"><use href="#i-home"/></svg></i>House Cleaning</a>
+        <a href="https://bandjcleaning.ca/maids/"><i><svg class="ico"><use href="#i-sparkle"/></svg></i>Maids &amp; Custom Cleaning</a>
+        <a href="https://bandjcleaning.ca/move-in-move-out-cleaning/"><i><svg class="ico"><use href="#i-pin"/></svg></i>Move-In &amp; Move-Out</a>
+        <a href="https://bandjcleaning.ca/deep-cleaning/"><i><svg class="ico"><use href="#i-star"/></svg></i>One-Time Deep Cleaning</a>
+        <a href="https://bandjcleaning.ca/post-construction-cleaning/"><i><svg class="ico"><use href="#i-tools"/></svg></i>Post Construction</a>
+        <a href="https://bandjcleaning.ca/spring-cleaning/"><i><svg class="ico"><use href="#i-leaf"/></svg></i>Spring &amp; Seasonal</a>
+        <a href="https://bandjcleaning.ca/vacation-rental-cleaning/"><i><svg class="ico"><use href="#i-cal"/></svg></i>Vacation Rental / Airbnb</a>
+      </div>
+      <a class="btn" href="https://bandjcleaning.ca/residential-cleaning/">Residential Cleaning <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="ind" id="industries">
+  <div class="wrap">
+    <div class="head rv">
+      <div><div class="eyebrow">Industry Solutions</div><h2>Specialized cleaning for the way your industry works.</h2></div>
+      <p>Every industry has its own standards. Pick yours to see how we clean it.</p>
+    </div>
+    <div class="bento rv">
+      <a class="tile t1" href="https://bandjcleaning.ca/bar-restaurant-cleaning/"><img src="images/restaurant.jpg" alt="Restaurant dining room"><span>Bar &amp; Restaurants<i><svg class="ico"><use href="#i-arrow"/></svg></i></span></a>
+      <a class="tile t2" href="https://bandjcleaning.ca/dealership-cleaning/"><img src="images/dealership.jpg" alt="Car dealership lot"><span>Car Dealership<i><svg class="ico"><use href="#i-arrow"/></svg></i></span></a>
+      <a class="tile t3" href="https://bandjcleaning.ca/dentist-medical-cleaning/"><img src="images/dental.jpg" alt="Dental clinic"><span>Dentist &amp; Medical<i><svg class="ico"><use href="#i-arrow"/></svg></i></span></a>
+      <a class="tile t4" href="https://bandjcleaning.ca/retail-store-cleaning/"><img src="images/retail.jpg" alt="Retail store aisle"><span>Retail Stores<i><svg class="ico"><use href="#i-arrow"/></svg></i></span></a>
+      <a class="tile t5" href="https://bandjcleaning.ca/factory-warehouse-cleaning/"><img src="images/factory.jpg" alt="Warehouse racking"><span>Factory &amp; Warehouse<i><svg class="ico"><use href="#i-arrow"/></svg></i></span></a>
+      <a class="tile t6" href="https://bandjcleaning.ca/fitness-centre-gym-cleaning/"><img src="images/gym.jpg" alt="Gym floor"><span>Fitness Centre &amp; Gyms<i><svg class="ico"><use href="#i-arrow"/></svg></i></span></a>
+      <a class="tile t7" href="https://bandjcleaning.ca/school-daycare-cleaning/"><img src="images/school.jpg" alt="Classroom"><span>School &amp; Daycare<i><svg class="ico"><use href="#i-arrow"/></svg></i></span></a>
+      <a class="tile t8" href="https://bandjcleaning.ca/spa-salon-cleaning/"><img src="images/spa.jpg" alt="Salon interior"><span>Spa &amp; Salon<i><svg class="ico"><use href="#i-arrow"/></svg></i></span></a>
+      <a class="tile t9" href="https://bandjcleaning.ca/religious-building-church-cleaning/"><img src="images/church.jpg" alt="Church pews"><span>Religious Buildings<i><svg class="ico"><use href="#i-arrow"/></svg></i></span></a>
+    </div>
+    <div class="extras rv">
+      <b>Also available</b>
+      <span><svg class="ico"><use href="#i-carpet"/></svg>Carpet &amp; floor cleaning</span>
+      <span><svg class="ico"><use href="#i-window"/></svg>Window washing</span>
+      <span><svg class="ico"><use href="#i-tools"/></svg>Custom janitorial work</span>
+      <a href="https://bandjcleaning.ca/janitorial-services/">Janitorial services <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="area" id="areas">
+  <div class="bg" aria-hidden="true"></div>
+  <div class="wrap grid">
+    <div class="rv">
+      <div class="eyebrow">Service Area</div>
+      <h2>Helping businesses stay clean &amp; healthy across Alberta.</h2>
+      <p>We serve a vast and diverse service area that extends across Calgary and Airdrie, covering downtown Calgary, central Airdrie and the suburban communities in between.</p>
+      <div class="locs">
+        <a class="btn sun" href="https://bandjcleaning.ca/calgary/">Calgary <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a class="btn sun" href="https://bandjcleaning.ca/airdrie/">Airdrie <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <div class="rv">
+      <svg class="route" viewBox="0 0 560 360" role="img" aria-label="Route from Calgary to Airdrie">
+        <path d="M90 290C170 250 190 200 270 175S400 120 470 70" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="16" stroke-linecap="round"/>
+        <path d="M90 290C170 250 190 200 270 175S400 120 470 70" fill="none" stroke="#ffc53d" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round"/>
+        <text class="small" x="196" y="248" transform="rotate(-24 196 248)">Suburban communities</text>
+        <a href="https://bandjcleaning.ca/calgary/"><circle class="pin" cx="90" cy="290" r="15" fill="#fff"/><circle cx="90" cy="290" r="6" fill="#0890c8"/><text x="116" y="318">Calgary</text></a>
+        <a href="https://bandjcleaning.ca/airdrie/"><circle class="pin" cx="470" cy="70" r="15" fill="#fff"/><circle cx="470" cy="70" r="6" fill="#0890c8"/><text x="380" y="46">Airdrie</text></a>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="pic"><img src="images/why-choose.jpg" alt="Cleaning supplies in a bucket"><b>Established in 2015, but decades of janitorial expertise.</b></div>
+  <div class="info">
+    <div class="eyebrow rv">Why Choose Us</div>
+    <h2 class="rv">Six reasons Calgary keeps calling back.</h2>
+    <ul class="six rv">
+      <li><svg class="ico"><use href="#i-star"/></svg><h3>Est. 2015</h3><p>Established in 2015, but decades of janitorial expertise.</p></li>
+      <li><svg class="ico"><use href="#i-coin"/></svg><h3>Cost Effective</h3><p>High-quality cleaning solutions at competitive prices.</p></li>
+      <li><svg class="ico"><use href="#i-heart"/></svg><h3>100% Satisfaction</h3><p>Our goal is your complete contentment with our services.</p></li>
+      <li><svg class="ico"><use href="#i-leaf"/></svg><h3>Green Cleaning</h3><p>Environmentally responsible practices for a healthier planet.</p></li>
+      <li><svg class="ico"><use href="#i-shield"/></svg><h3>Bonded &amp; Insured</h3><p>Your peace of mind and security are our priorities.</p></li>
+      <li><svg class="ico"><use href="#i-scale"/></svg><h3>Ethical</h3><p>Committed to ethical business practices and transparency.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="rev" id="reviews">
+  <div class="wrap">
+    <div class="eyebrow rv">Testimonials</div>
+    <h2 class="rv">Building managers, condo boards and homeowners on working with B&amp;J.</h2>
+    <div class="grid">
+      <div class="feat rv">
+        <svg class="q" viewBox="0 0 24 24"><path d="M3 21c0-6 1-12 7-14v3c-2 1-3 3-3 5h3v6zm11 0c0-6 1-12 7-14v3c-2 1-3 3-3 5h3v6z"/></svg>
+        <div class="eyebrow" style="color:var(--sun)">Property Manager</div>
+        <blockquote>“Trustworthiness, dedication, dependable and accommodating!”</blockquote>
+        <div class="who"><i>D</i><div><b>David A.</b><small>Property Manager</small></div></div>
+      </div>
+      <ul class="qs rv">
+        <li><blockquote>“They're punctual, incredibly accommodating, do a fantastic job, and are always friendly.”</blockquote><div class="who"><i>C</i><div><b>Chris Hunt</b><small>Building Manager, Lower Mount Royal</small></div></div></li>
+        <li><blockquote>“Our Condo Board switched to B&amp;J in early 2020 and they have been amazing and far superior to our previous services.”</blockquote><div class="who"><i>C</i><div><b>Carey Thacker</b><small>Condo Board</small></div></div></li>
+        <li><blockquote>“You get real value for your money because they leave your space sparkling clean and spotless.”</blockquote><div class="who"><i>K</i><div><b>Karamah Mohammed</b><small>Client</small></div></div></li>
+        <li><blockquote>“I believe their services offered great value for the price I paid.”</blockquote><div class="who"><i>J</i><div><b>Jessica Jia</b><small>Client</small></div></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <svg class="sp" style="left:4%;top:40px;width:60px" viewBox="0 0 24 24"><use href="#i-sparkle"/></svg>
+  <svg class="sp" style="left:48%;bottom:34px;width:30px" viewBox="0 0 24 24"><use href="#i-sparkle"/></svg>
+  <svg class="sp" style="right:6%;top:30px;width:44px" viewBox="0 0 24 24"><use href="#i-sparkle"/></svg>
+  <div class="wrap">
+    <div class="rv">
+      <h2>Let's Get Cleaning</h2>
+      <p>Contact us today for a free consultation and cleaning quote. We'll tailor a cleaning plan to your workspace.</p>
+    </div>
+    <div class="side rv">
+      <a class="btn sun" href="https://bandjcleaning.ca/contact/#quote">Get a Free Quote <svg class="ico"><use href="#i-arrow"/></svg></a>
+      <a class="line" href="tel:+14039985259"><svg class="ico" style="font-size:22px"><use href="#i-phone"/></svg>(403) 998-5259</a>
+      <a class="line" href="mailto:info@bandjcleaning.ca"><svg class="ico" style="font-size:22px"><use href="#i-mail"/></svg>info@bandjcleaning.ca</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="contact-l">
+        <img class="fl" src="images/logo-white.png" alt="Bright & Jiffy Cleaning" width="247" height="150">
+        <address>500 4th Ave. SW #2500<br>Calgary, AB T2P 2V6</address>
+        <a href="tel:+14039985259"><svg class="ico"><use href="#i-phone"/></svg>(403) 998-5259</a>
+        <a href="mailto:info@bandjcleaning.ca"><svg class="ico"><use href="#i-mail"/></svg>info@bandjcleaning.ca</a>
+        <div class="social"><a href="https://www.instagram.com/brightjiffy/" aria-label="Instagram" target="_blank" rel="noopener"><svg class="ico"><use href="#i-insta"/></svg></a></div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://bandjcleaning.ca/janitorial-services/">Janitorial Services</a></li>
+          <li><a href="https://bandjcleaning.ca/residential-cleaning/">Residential Cleaning</a></li>
+          <li><a href="https://bandjcleaning.ca/cleaning-company/">About Our Cleaning Company</a></li>
+          <li><a href="https://bandjcleaning.ca/contact/">Contact</a></li>
+          <li><a href="https://bandjcleaning.ca/contact/#quote">Request a Free Quote</a></li>
+        </ul>
+        <h4 style="margin-top:28px">Locations</h4>
+        <ul>
+          <li><a href="https://bandjcleaning.ca/calgary/">Calgary</a></li>
+          <li><a href="https://bandjcleaning.ca/airdrie/">Airdrie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Business Cleaning</h4>
+        <ul>
+          <li><a href="https://bandjcleaning.ca/commercial-cleaning/">Commercial Cleaning</a></li>
+          <li><a href="https://bandjcleaning.ca/office-cleaning/">Office Cleaning</a></li>
+          <li><a href="https://bandjcleaning.ca/day-porters/">Day Porters</a></li>
+          <li><a href="https://bandjcleaning.ca/industrial-cleaning/">Industrial Cleaning</a></li>
+          <li><a href="https://bandjcleaning.ca/condo-building-cleaning/">Condo Buildings</a></li>
+          <li><a href="https://bandjcleaning.ca/janitorial-services/">Janitorial Services</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="https://bandjcleaning.ca/dealership-cleaning/">Car Dealership</a></li>
+          <li><a href="https://bandjcleaning.ca/dentist-medical-cleaning/">Dentist &amp; Medical</a></li>
+          <li><a href="https://bandjcleaning.ca/factory-warehouse-cleaning/">Factory &amp; Warehouse</a></li>
+          <li><a href="https://bandjcleaning.ca/fitness-centre-gym-cleaning/">Fitness Centre &amp; Gym</a></li>
+          <li><a href="https://bandjcleaning.ca/religious-building-church-cleaning/">Religious Building &amp; Church</a></li>
+          <li><a href="https://bandjcleaning.ca/bar-restaurant-cleaning/">Restaurant Cleaning</a></li>
+          <li><a href="https://bandjcleaning.ca/retail-store-cleaning/">Retail Store</a></li>
+          <li><a href="https://bandjcleaning.ca/spa-salon-cleaning/">Spa &amp; Salon</a></li>
+          <li><a href="https://bandjcleaning.ca/school-daycare-cleaning/">School &amp; Daycare</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Home Cleaning</h4>
+        <ul>
+          <li><a href="https://bandjcleaning.ca/home-cleaning/">Home Cleaning</a></li>
+          <li><a href="https://bandjcleaning.ca/apartment-condo-cleaning/">Apartment &amp; Condo</a></li>
+          <li><a href="https://bandjcleaning.ca/maids/">Maids &amp; Custom Cleaning</a></li>
+          <li><a href="https://bandjcleaning.ca/move-in-move-out-cleaning/">Move-In &amp; Move-Out</a></li>
+          <li><a href="https://bandjcleaning.ca/deep-cleaning/">One-Time Deep Cleaning</a></li>
+          <li><a href="https://bandjcleaning.ca/post-construction-cleaning/">Post Construction</a></li>
+          <li><a href="https://bandjcleaning.ca/spring-cleaning/">Spring &amp; Seasonal</a></li>
+          <li><a href="https://bandjcleaning.ca/vacation-rental-cleaning/">Vacation Rental / Airbnb</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <div class="l"><span>©2026 Bright &amp; Jiffy Cleaning, All Rights Reserved</span><a href="https://bandjcleaning.ca/html-sitemap/">Sitemap</a><a href="https://bandjcleaning.ca/policy/">Website Policies</a></div>
+      <div class="credit">Design by <a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Cleaning Digital</a>.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var burger=document.querySelector('.burger'),nav=document.getElementById('mainnav');
+  burger.addEventListener('click',function(){var o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+  document.querySelectorAll('nav.main li.has>.tl').forEach(function(b){
+    b.addEventListener('click',function(){
+      var li=b.parentNode,was=li.classList.contains('open');
+      document.querySelectorAll('nav.main li.open').forEach(function(x){x.classList.remove('open')});
+      if(!was)li.classList.add('open');b.setAttribute('aria-expanded',!was);
+    });
+  });
+  document.addEventListener('click',function(e){if(!e.target.closest('nav.main'))document.querySelectorAll('nav.main li.open').forEach(function(x){x.classList.remove('open')})});
+  // directory hover swap
+  var rows=document.querySelectorAll('#rows .row'),imgs=document.querySelectorAll('.plaque .right img'),tag=document.getElementById('tagtxt');
+  function show(r){rows.forEach(function(x){x.classList.toggle('on',x===r)});imgs.forEach(function(i){i.classList.toggle('on',i.dataset.k===r.dataset.img)});tag.textContent=r.querySelector('h3').textContent}
+  rows.forEach(function(r){r.addEventListener('mouseenter',function(){show(r)});r.addEventListener('focus',function(){show(r)})});
+  // reveal
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    els.forEach(function(el){io.observe(el)});
+  }else els.forEach(function(el){el.classList.add('in')});
+})();
+</script>
+</body>
+</html>
